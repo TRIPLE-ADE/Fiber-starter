@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- header state start -->
+    <header>
+        <div class="navbar">
+            <!-- header logo state start -->
+            <a href="index.html" class="logo-text">Fiber</a>
+            <!-- header logo state end -->
+
+        </div>
+    </header>
+    <!-- header state end -->
+
+    <!-- main state start -->
+    <main>
+        <section class="section1">
+            <div class="signup-info">
+                <form action="" method="post" autocomplete="off" >
+                    <h1>Create your Fiber account</h1>
+                    <div class="inputs">
+                        <label for="name">Your Name</label>
+                        <input type="text" name="name" id="name" placeholder="John Doe" required>
+                    </div>
+                    <div class="inputs">
+                        <label for="email">E-mail</label>
+                        <input type="text" name="email" id="email" placeholder="John@example.com" >
+                    </div>
+                    <div class="inputs">
+                        <label for="password">Password</label>
+                        <div class="password-inputs">
+                            <input type="password" name="password" id="password" placeholder="All least 8 characters">
+                            <img src="./Assets/hide password.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="checkbox-info">
+                        <input type="checkbox" name="terms" id="terms">
+                        <p> By creating an account on Fiber, you agree to the <a href="">Terms & Condition</a> </p>
+                    </div>
+                    
+                    <button type="submit">Create Fiber Account</button>
+                    <p class="alt-signin">Already have an account? <a href="">Sign In</a></p>
+                </form>
+            </div>
+        </section>
+
+        <section class="section2">
+            <div class="signup-image">
+                <img src="./Assets/Sign Up Image.png" alt="" width="300">
+                <p>Unparalleled Templates</p>
+                <p>Crafted by a team of professional designers, our templates are unparalleled in the market </p>
+                
+            </div>
+        </section>
+    </main>
+    <!-- main state end -->
+
+    <script src="app.js"></script>
+</body>
+</html>

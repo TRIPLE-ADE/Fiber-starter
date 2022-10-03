@@ -1,0 +1,170 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+:root{
+    --gray:#fbf8f3;
+    --black:#030303;
+    --blue:#4e13d1;
+}
+
+header{
+    width: 80%;
+    padding: 20px 0;
+    position: fixed;
+}
+.navbar{
+    width: 82%;
+    padding: 20px 0;
+    margin: auto;
+}
+.navbar a{
+    color: var(--black);
+    text-decoration: none;
+    font-weight: 800;
+}
+main{
+    display: grid;
+    grid-template-columns:1fr 1fr ;
+    min-height: 100vh;
+}
+.signup-info{
+    padding-top:100px;
+    width:70%;
+    max-width: 450px;
+    margin: auto;
+    place-self: center;
+}
+.signup-image{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    padding-top:100px;
+    min-height: 100vh;
+    background-color: var(--blue);
+}
+form .inputs{
+    margin-top:20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+form h1{
+    font-size: 2rem;
+    font-weight: 700;
+}
+label{
+    font-weight: 700;
+    font-size: 14px;
+}
+.inputs input{
+    outline: none;
+    border: 1px solid rgb(118, 118, 118);
+    padding:0 10px;
+    line-height: 3;
+    border-radius:5px;
+}
+.password-inputs{
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(118, 118, 118);
+    border-radius:5px;
+}
+#password{
+    width: 90%;
+}
+.checkbox-info{
+    padding: 20px 0;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+p{
+    font-weight: 500;
+}
+p a{
+    font-weight: 600;
+    color: var(--blue);
+    line-height: 2;
+}
+button, #password{
+    border-radius:5px;
+    outline: none;
+    border: none;
+}
+button{
+    width: 100%;
+    line-height: 3;
+    background-color: var(--blue);
+    color: var(--gray);
+    font-weight: 600;
+}
+.alt-signin{
+    text-align: center;
+    margin-top: 10px;
+}
+.alt-signin a{
+    text-decoration: none;
+}
+
+.signup-image img{
+    width:400px ;
+}
+.signup-image p:nth-child(2){
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-top: 15px;
+    opacity: 1;
+}
+.signup-image p{
+    color: var(--gray);
+    line-height: 1.5;
+    width: 50%;
+    opacity: 0.8;
+}
+
+
+
+@media (max-width:900px) {
+    main{
+    grid-template-columns:1fr ;
+    }
+    .signup-image{
+        display:none;
+    }
+    .signup-info{
+        width:85%;
+    }
+    .password-inputs img{
+        width: 18px;
+    }
+}
+
+@media (max-width:400px) {
+    header{
+    padding: 0;
+    }
+    .navbar{
+        padding: 20px 0 0;
+    }
+
+    .signup-info{
+        padding-top:80px;
+    }
+    form h1{
+        font-size: 1.8rem;
+    }
+    p, p > a{
+        font-size: 13px;
+        font-weight: 600;
+    }
+}
