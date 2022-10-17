@@ -185,12 +185,10 @@ section, footer{
     padding:10px 0;
 }
 .container{
-    display: flex;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
     padding: 40px 0;
     gap:30px;
-}
-.row{
-    flex-basis: 32%;
 }
 .row-heading{
     font-size:1rem;
