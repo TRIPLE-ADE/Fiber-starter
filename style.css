@@ -192,9 +192,13 @@ section, footer{
 .row{
     flex-basis: 32%;
 }
-.row p:nth-child(2){
+.row-heading{
+    font-size:1rem;
     font-weight: 600;
     padding: 10px 0;
+}
+.row-content{
+    font-size:1rem;
 }
 .trial-info{
     display: flex;
