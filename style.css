@@ -186,6 +186,7 @@ section, footer{
 }
 .container{
     display: flex;
+    align-items:flex-start;
     padding: 40px 0;
     gap:30px;
 }
