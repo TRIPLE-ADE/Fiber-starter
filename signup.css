@@ -57,7 +57,7 @@ form .inputs{
     flex-direction: column;
     gap: 5px;
 }
-form h1{
+h1{
     font-size: 2rem;
     font-weight: 700;
 }
@@ -87,7 +87,9 @@ label{
     align-items: flex-start;
     gap: 10px;
 }
-
+.checkbox-info p{
+    margin-top: -3px;
+}
 p{
     font-weight: 500;
 }
@@ -119,20 +121,25 @@ button{
 .signup-image img{
     width:400px ;
 }
-.signup-image p:nth-child(2){
-    font-weight: 600;
-    font-size: 1.2rem;
-    margin-top: 15px;
-    opacity: 1;
+.signup-image h1{
+    color: var(--gray);
+    line-height:2;
 }
 .signup-image p{
+    font-size: 0.9rem;
     color: var(--gray);
     line-height: 1.5;
     width: 50%;
     opacity: 0.8;
+    margin-bottom: 10px;
+
 }
-
-
+input:focus {
+    background: transparent;
+}
+input[type="radio"]{
+    accent-color: var(--gray);
+}
 
 @media (max-width:900px) {
     main{

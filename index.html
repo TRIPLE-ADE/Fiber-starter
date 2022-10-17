@@ -8,38 +8,43 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
 </head>
 <body>
     <!-- header state start -->
     <header>
-        <div class="navbar">
+            <!-- navbar links state start -->
+        <nav>
             <!-- header logo state start -->
             <a href="#" class="logo-text">Fiber</a>
             <!-- header logo state end -->
 
-            <!-- navbar links state start -->
-            <nav>
+            <!-- navbar links state start   -->
+            <div class="navbar-links">
                 <ul class="pages-links">
-                    <li><a href="">Community</a></li>
-                    <li><a href="">Pricing</a></li>
-                    <li><a href="">Features</a></li>
+                    <li><a href="" class="nav-link">Community</a></li>
+                    <li><a href="" class="nav-link">Pricing</a></li>
+                    <li><a href="" class="nav-link">Features</a></li>
                 </ul>
                 <ul class="signing-links">
-                    <li class="sign-in-link"><a href="">Sign In</a></li>
-                    <li class="sign-up-link"><a href="signup.html"><button>Sign Up</button></a></li>
+                    <li class="sign-in-link" class="nav-link"><a href="">Sign In</a></li>
+                    <li class="sign-up-link" class="nav-link"><a href="signup.html"><button>Sign Up</button></a></li>
                 </ul>
-                </div>
-            </nav>
-            <!-- navbar links state end-->
+            </div>
+            <!-- navbar links state end -->
 
             <!-- mobile hamburger state start -->
             <div class="hamburger">
-                <img src="/" alt="">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
             <!-- mobile hamburger state end -->
 
-        </div>
+        </nav>
+        <!-- navbar links state end-->    
     </header>
     <!-- header state end -->
 
@@ -111,44 +116,70 @@
                 </div>
 
             </div>
-            <div class="carousel container">
-                <div class="slide">
-                    <div class="profile">
-                       <img src="./Assets/User Avatar.svg" alt="Avatar_image" width="35px"> 
-                        <div class="profile-info">
-                            <p>Sarah Andrews</p>
-                            <p>$100k in revenue</p>
+            <div class="carousel">
+                <div id="testimonial-slider" class="slider">
+                    <div class="testimonial">
+                        <div class="profile">
+                        <img src="./Assets/User Avatar.svg" alt="Avatar_image" width="35px"> 
+                            <div class="profile-info">
+                                <p>Sarah Andrews</p>
+                                <p>$100k in revenue</p>
+                            </div>
                         </div>
-                    </div>
-                    <p>Setting up my portfolio with Fiber took no more than 10 minutes. since then, my portfolio has attracted a lot of clients and made me more than $100k </p>
+                        <p>Setting up my portfolio with Fiber took no more than 10 minutes. since then, my portfolio has attracted a lot of clients and made me more than $100k </p>
 
-                    <button><a href="">Views Sarah's Portfolio</a></button>
-                </div>
-                <div class="slide">
-                    <div class="profile">
-                        <img src="./Assets/User Avatar 2.svg" alt="Avatar_image" width="35px">
-                        <div class="profile-info">
-                            <p>Mathew Higgins</p>
-                            <p>$20k in revenue</p>
+                        <button><a href="">Views Sarah's Portfolio</a></button>
+                    </div>
+                    <div class="testimonial">
+                        <div class="profile">
+                            <img src="./Assets/User Avatar 2.svg" alt="Avatar_image" width="35px">
+                            <div class="profile-info">
+                                <p>Mathew Higgins</p>
+                                <p>$20k in revenue</p>
+                            </div>
                         </div>
-                    </div>
-                    <p>I have been getting A LOT of leads ever since I used Fiber's premade templates, now i just need to work on my case studies and I'll be ready to go </p>
+                        <p>I have been getting A LOT of leads ever since I used Fiber's premade templates, now i just need to work on my case studies and I'll be ready to go </p>
 
-                    <button><a href="">Views Mathew's Portfolio</a></button>
-                </div>
-                <div class="slide">
-                    <div class="profile">
-                       <img src="./Assets/User Avatar 32.svg" alt="Avatar_image" width="35px" > 
-                        <div class="profile-info">
-                            <p>Janice Dave</p>
-                            <p>$30k in revenue</p>
+                        <button><a href="">Views Mathew's Portfolio</a></button>
+                    </div>
+                    <div class="testimonial">
+                        <div class="profile">
+                        <img src="./Assets/User Avatar 32.svg" alt="Avatar_image" width="35px" > 
+                            <div class="profile-info">
+                                <p>Janice Dave</p>
+                                <p>$30k in revenue</p>
+                            </div>
                         </div>
-                    </div>
-                    <p>I only just started freelancing this year and i have already made more than i ever earn in my full-time job. The templates are so amazing.  </p>
+                        <p>I only just started freelancing this year and i have already made more than i ever earn in my full-time job. The templates are so amazing.  </p>
 
-                    <button><a href="">Views Janice's Portfolio</a></button>
-                </div>
-            </div> 
+                        <button><a href="">Views Janice's Portfolio</a></button>
+                    </div>
+                    <div class="testimonial">
+                        <div class="profile">
+                        <img src="./Assets/User Avatar 32.svg" alt="Avatar_image" width="35px" > 
+                            <div class="profile-info">
+                                <p>Janice Dave</p>
+                                <p>$30k in revenue</p>
+                            </div>
+                        </div>
+                        <p>I only just started freelancing this year and i have already made more than i ever earn in my full-time job. The templates are so amazing.  </p>
+
+                        <button><a href="">Views Janice's Portfolio</a></button>
+                    </div>
+                    <div class="testimonial">
+                        <div class="profile">
+                        <img src="./Assets/User Avatar 32.svg" alt="Avatar_image" width="35px" > 
+                            <div class="profile-info">
+                                <p>Janice Dave</p>
+                                <p>$30k in revenue</p>
+                            </div>
+                        </div>
+                        <p>I only just started freelancing this year and i have already made more than i ever earn in my full-time job. The templates are so amazing.  </p>
+
+                        <button><a href="">Views Janice's Portfolio</a></button>
+                    </div>
+                </div> 
+            </div>
         </section>
         <!-- root2 section state end -->
 
@@ -194,5 +225,8 @@
         <!-- root3 section state end -->
     </footer>
     <!-- footer state end -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>

@@ -1,3 +1,4 @@
+/* default styling state start */
 *, *::after, *::before{
     box-sizing: border-box;
 }
@@ -14,6 +15,10 @@
 body{
     width:100%;
 }
+/* default styling state END */
+
+
+/* header styling state start  */
 header{
     width: 100%;
     display: flex;
@@ -23,7 +28,7 @@ header{
     position: fixed;
     z-index: 1000;
 }
-.navbar{
+nav{
     width: 85%;
     padding: 20px 0;
     margin: auto;
@@ -34,7 +39,7 @@ header{
 header a{
     color:var(--black);
 }
-nav{
+.navbar-links{
     display: flex;
     gap: 120px;
 }
@@ -74,10 +79,25 @@ nav ul li a, .logo-text{
 .hamburger{
     display: none;
 }
+.hamburger .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--black) !important;
+}
+/* header styling state END  */
 
+/* body styling state start  */
 section, footer{
     width: 100%;
 }
+
+/* main styling state start */
+
+/* root1 styling state start */
 .root1{
     padding: 80px 0 150px;
     background-color: var(--gray);
@@ -101,6 +121,9 @@ section, footer{
 }
 .star{
     padding-right: 10px;
+}
+.hero-image{
+    overflow-x: hidden;
 }
 .hero-image img{
     margin-left: 20rem;
@@ -133,8 +156,6 @@ section, footer{
 }
 .hero-content ul{
     display: inline-flex;
-    align-items: center;
-    gap: 40px;
     list-style: none;
 }
 .hero-content ul li{
@@ -145,7 +166,10 @@ section, footer{
     padding:  10px 20px ;
     opacity: 0.9;
 }
+/* root1 styling state end */
 
+
+/* root2 styling state start */
 .why-info{
     width: 85%;
     padding-top: 50px;
@@ -217,14 +241,11 @@ section, footer{
     border-radius: 5px;
 }
 .carousel{
-    width: 85%;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
+    width: 86%;
+    margin: 30px auto;
 }
-.slide{
-    flex-basis: 32%;
+.testimonial{
+    flex: 1;
     border:2px solid hsla(0, 0%, 2%, 0.207);
     padding:  25px;
     font-weight: 600;
@@ -232,6 +253,8 @@ section, footer{
     display: flex;
     flex-direction: column;
     gap: 15px;
+    min-height: 230px;
+    margin: 0 10px;
 }
 .profile{
     display: flex;
@@ -245,25 +268,31 @@ section, footer{
 .profile p:nth-child(2){
    opacity: 0.8; 
 }
-.slide > p{
+.testimonial > p{
     opacity: 0.8;
 }
-.slide button{
+.testimonial button{
     width: 100%;
     background-color: transparent;
     border:2px solid hsla(0, 0%, 2%, 0.207);
 }
-.slide button a{
+.testimonial button a{
    text-decoration: none;  
    color: var(--blue);
    font-weight: 600;
 }
+/* root2 styling state end */
+
+/* main styling state end*/
+
+
+/* footer styling state start */
 footer{
     background-color: var(--gray);
 }
 .root3{
     display: flex;
-    gap: 40px;
+    gap: 20px;
     width: 85%;
     margin: auto;
     padding: 50px 0;
@@ -287,12 +316,187 @@ footer{
 .portfolios{
     width: 250px;
 }
+/* footer styling state end*/
 
+/* body styling state end */
+
+
+/* media query at 1000 px start*/
 @media (max-width:1000px) {
     .hero-page{
         align-items:center;
     }
 }
+/* media query at 1000 px end */
+
+
+/* media query at 900 px start */
 @media (max-width:900px) {
+    html{
+        font-size: 15px;
+    }
+
+    /* header styling state start */
+    nav{
+        width: 90%;
+    }
+    /* header styling state end*/
+
+    /* main styling state start */
+    .hero-page{
+        width: 90%;
+        margin: auto;
+    }
+    .hero-content{
+        margin-top: 50px;
+    }
+    .hero-content h1{
+        font-size: 2.8rem;
+    }
+    .hero-image img{
+        width: 110%;
+    }
+
+    .root3{
+        display: flex;
+        gap: 40px;
+        width: 90%;
+    }
+    /* main styling state end */
+}
+
+/* media query at 900 px end */
+
+
+/* media query at 625 px start */
+@media (max-width:625px) {
+    /* header styling state start */
+    header{
+        align-items:flex-start;
+    }
+    header a, header button{
+        font-size: 1.2rem;
+    }
+    nav{
+        align-items: flex-start;
+        margin: 0 auto;
+    }
+    .navbar-links{
+       position: fixed;
+       flex-direction: column;
+       width: 100%;
+       height: 100%;
+       top: 68px;
+       padding-top:50px;
+       right: -100%;
+       transition: 0.3s;
+    }
+    .navbar-links.active{
+        right: 0;
+        background-color: var(--gray);
+    }
+    .pages-links, .signing-links{
+        align-items:center;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    .hamburger{
+        display:block;
+        cursor: pointer;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+       transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+       transform: translateY(-8px) rotate(-45deg);
+    }
+    button{
+         width: 100px;
+    }
+    /* header styling state end*/
+
+    /* main styling state start */
+
+    /* root1 styling state start */
+    .root1{
+        padding: 80px 0 50px;
+        background-color: var(--gray);
+    }
+    .hero-page{
+        width: 85%;
+        margin: auto;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .hero-content{
+        margin-top: 20px;
+    }
+    .hero-content h1{
+        font-size: 2rem;
+        font-weight: 800;
+    }
+    .hero-image img{
+        width: 100%;
+    }
+    .rating{
+        display: none;
+    }
+    .button-links, .hero-content ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .button-links button{
+        width: 100%;
+        font-size: 1.1rem;
+    }
+    /* root1 styling state end */
+    
+    /* root2 styling state start */
+    .container{
+       flex-direction: column;
+       gap: 40px;
+    }
+    .trial-info{
+        flex-direction: column;
+        padding:0  30px ;
+    }
+    .trial-info > div{
+        width:100%;
+        padding: 40px 0 0;
+    }
+    .trial-text button{
+        width: 100%;
+        font-size: 1.1rem;
+    }
+    .trial-image img{
+        margin-bottom: -4px;
+        width: 100%;
+        height: 280px;
+        object-fit: cover;
+    } 
+    .carousel{
+        width: 89%;
+        margin: 30px auto;
+    }  
+    /* root2 styling state end */
+
+    /* main styling state end */
+    
+    /* footer styling state start */
+    .root3{
+      flex-direction: column;
+        width: 85%;
+    }
+    .footer-sections h3{
+        font-size:1.1rem;
+    }
+    /* footer styling state end */
     
 }
+
+/* media query at 625 px end */
