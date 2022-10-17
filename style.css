@@ -189,14 +189,15 @@ section, footer{
     align-items:flex-start;
     padding: 40px 0;
     gap:30px;
+    font-size:16px;
 }
 .row-heading{
-    font-size:1rem;
+    font-size:1em;
     font-weight: 600;
     padding: 10px 0;
 }
 .row-content{
-    font-size:1rem;
+    font-size:1em;
 }
 .trial-info{
     display: flex;
