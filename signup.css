@@ -72,6 +72,13 @@ label{
     line-height: 3;
     border-radius:5px;
 }
+.inputs input:-webkit-autofill,
+.inputs input:-webkit-autofill:hover,
+.inputs input:-webkit-autofill:active,
+.inputs input:-webkit-autofill:focus {
+    background-color: #FFFFFF;
+    -webkit-box-shadow: 0 0 0 1000px white inset !important;
+}
 .password-inputs{
     display: flex;
     align-items: center;
